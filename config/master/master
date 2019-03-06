@@ -1,0 +1,37 @@
+auto_accept: true
+
+
+# only one source for top file for states
+file_roots:
+  base:
+    - /srv/salt/states/base
+
+
+# Pick which pillar top files are applied
+env_order:
+  - base-global
+  - base-fra
+  - base-fra-dev
+
+
+
+# where are the environment top files are stored
+pillar_roots:
+  base-global:
+    - /srv/salt/pillars/base-global
+  base-fra:
+    - /srv/salt/pillars/base-fra
+  base-fra-dev:
+    - /srv/salt/pillars/base-fra-dev
+  base-fra-staging:
+    - /srv/salt/pillars/base-fra-staging
+  base-fra-live:
+    - /srv/salt/pillars/base-fra-live
+  base-ore:
+    - /srv/salt/pillars/base-ore
+  base-ore-dev:
+    - /srv/salt/pillars/base-ore-dev
+  base-ore-staging:
+    - /srv/salt/pillars/base-ore-staging
+  base-ore-live:
+    - /srv/salt/pillars/base-ore-live

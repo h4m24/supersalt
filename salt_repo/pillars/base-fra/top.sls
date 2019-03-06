@@ -1,0 +1,3 @@
+base-fra:
+  '*':
+    - fra-values

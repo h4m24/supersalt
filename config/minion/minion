@@ -1,0 +1,4 @@
+log_level: error
+state_output: mixed
+master: 192.168.5.11
+id: minion
